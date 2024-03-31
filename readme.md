@@ -17,15 +17,22 @@ Simple UI using React framework. Creates and show posts and their respectives co
 
 ### Posts
 Service responsible to handle posts.
+
 Events emmited by this service: PostCreated
+
 PostCreated: When a post is created on Blog.
 
 ### Comments
 Service responsible to handle comments - Create and Update comments.
+
 The comments of this application has three states: pending | approved | rejected (when comment includes the word 'orange').
+
 Events emmited by this service: CommentCreated | CommentModerated | CommentUpdated
+
 CommentCreated: When a comment is added in a Post.
+
 CommentModerated: Received from Moderation Microservice when comment is approved or rejected.
+
 CommentUpdated: Event with current status (approved|rejected) sent to be updated on Query Service.
 
 ### Event-Bus
